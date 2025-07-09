@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Registro Curso Python | EduInforma</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Registro Curso Python</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="python.html">¿Qué es Python?</a></li>
+                <li><a href="cursos.html" class="active">Cursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de inscripción</h2>
+            <form action="#" method="post" class="registration-form">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required />
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="10" max="100" required />
+
+                <label for="experiencia">Experiencia previa en programación:</label>
+                <select id="experiencia" name="experiencia" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="ninguna">Ninguna</option>
+                    <option value="basica">Básica</option>
+                    <option value="intermedia">Intermedia</option>
+                    <option value="avanzada">Avanzada</option>
+                </select>
+
+                <fieldset>
+                    <legend>Modalidad preferida:</legend>
+                    <label><input type="radio" name="modalidad" value="online" required /> Online</label>
+                    <label><input type="radio" name="modalidad" value="presencial" /> Presencial</label>
+                </fieldset>
+
+                <label><input type="checkbox" name="acepto" required /> Acepto los términos y condiciones</label>
+
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                <input type="submit" value="Enviar registro" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 EduInforma</p>
+    </footer>
+</body>
+</html>
